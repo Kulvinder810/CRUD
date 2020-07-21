@@ -1,0 +1,115 @@
+/*###########Defaults###################*/
+.cssnav{
+    display: block;
+}
+
+.cssnav {
+    position: fixed;
+    z-index: 1;
+}
+
+
+
+
+/*#############Nav Bar###############*/
+.cssnav {
+    width: 100%;
+}
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnavleft li{
+    list-style: none;
+    float: left;
+}
+ul.topnavleft li.topnavright{
+    float:right;
+}
+
+ul.topnavleft li.topnavcenter{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+ul.topnavleft li a{
+    text-decoration: none;
+    display: block;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+ul.topnavleft li a:hover{
+    background-color: #0080ff;
+    color: white;
+}
+ul.topnavleft li.dropdownicon{
+    display: none;
+}
+
+
+/*###########mobile#############*/
+@media screen and (max-width: 630px){
+    ul.topnavleft li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnavleft li.dropdownicon{
+        display: block;
+        float: right;
+    }
+    ul.topnavleft.responsive li.dropdownicon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnavleft.responsive{
+        position: relative;
+    }
+    ul.topnavleft.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnavleft.responsive li a{
+        display: block;
+        text-align: center;
+    }
+
+    
+    input[type="text"] {
+        width: 350px;
+    }
+    
+    
+   
+   
+    div.mobileStack{
+        width:50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
